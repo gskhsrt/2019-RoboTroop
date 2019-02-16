@@ -152,14 +152,21 @@ int main()
     //Turn right
     motor(left, 50);
     motor(right, -50);
-    msleep(500);
+    msleep(1500);
     ao();
     
-    //Forward
+    //Forward toward people
     motor(left, 50);
     motor(right, 50);
     msleep(1000);
     ao();
+	
+	//Turn right toward people
+	motor(left, 50);
+	motor(right, -10);
+	msleep(1500);
+	ao();
+	 
     
     disable_servos();
     ao();
